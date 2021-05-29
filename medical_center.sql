@@ -4,7 +4,7 @@ DROP DATABASE IF EXISTS medical_center_db;
 
 CREATE DATABASE medical_center_db;
 
-\c medical_center_db
+\c medical_center_db;
 
 -- CREATE TABLES & INSERT DATA
 
