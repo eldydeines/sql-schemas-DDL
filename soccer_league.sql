@@ -4,7 +4,7 @@ DROP DATABASE IF EXISTS league_db;
 
 CREATE DATABASE league_db;
 
-\c league_db
+\c league_db;
 
 -- CREATE TABLES
 
@@ -90,6 +90,6 @@ CREATE TABLE goals
     player_id INTEGER REFERENCES players (pl_id),
     match_id INTEGER REFERENCES match (match_id),
     time_of_goal TIMESTAMP NOT NULL
-)
+);
 
 
