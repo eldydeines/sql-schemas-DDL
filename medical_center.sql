@@ -1,4 +1,4 @@
---INITIALISE DATABASE
+--INITIALIZE DATABASE
 
 DROP DATABASE IF EXISTS medical_center_db;
 
@@ -6,7 +6,7 @@ CREATE DATABASE medical_center_db;
 
 \c medical_center_db
 
--- CREATE TABLES
+-- CREATE TABLES & INSERT DATA
 
 CREATE TABLE med_center 
     (ctr_id SERIAL PRIMARY KEY, 
@@ -74,6 +74,7 @@ VALUES
     ('lung disease', 'Affects the lungs', 'hard breathing', 'o2'),
     ('skin disease', 'Affects the skin', 'rashes', 'sensitivity');
 
+-- CREATE REFERENCE TABLES
 
 CREATE TABLE patient_docs
     (id SERIAL PRIMARY KEY, 
